@@ -107,8 +107,87 @@ Creo .gitignore con pasos.txt
 
 ////////////////////////////////////////////////
 
+EMPEZAMOS EN GITHUB:
+Creo en github un nuevo repositorio:
+…or push an existing repository from the command line
+git remote add origin https://github.com/NEBULA1978/CURSO-GIT_SAROSI.git
+git branch -M main
+git push -u origin main
+
+En la consola dentro  del proyecto:
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ g
+it remote add origin https://github.com/NEBULA1978/CURSO-GIT_SAROSI.git
+next@rases:~/Vídeos/varios anteriores/VIDEO
+S_PROYECTOS/curso-git-sarosi$
 
 
+
+////////////////////////////////////////////////
+
+Para ubir o bajar codigo a githuib:
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git remote -v
+originanhttps://github.com/NEBULA1978/CURSO-GIT_SAROSI.git (fetch)(bajar codigo)
+originYEhttps://github.com/NEBULA1978/CURSO-GIT_SAROSI.git (push)(subir codigo)
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ 
+
+////////////////////////////////////////////////
+Genero clave privada ssh en proyecto desde consola:
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ s
+sh-keygen -t ed25519 -C "rpascualet@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/home/next/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/next/.ssh/id_ed25519
+Your public key has been saved in /home/next/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:7MOuQn+Z+pj9wKZ2L63SB58sO9ZD71ZiPbS70ic99ss rpascualet@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|                 |
+|                 |
+|                 |
+|       .      .  |
+|        S    o . |
+|    .  +. . o =  |
+|   . . .BX + + + |
+|    . +B@oO + =oo|
+|     o*O*Xo+..oE=|
++----[SHA256]-----+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ 
+
+////////////////////////////////////////////////
+Para subir a github no me ha pedido clave ssh:
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git push -u origin master
+Enumerando objetos: 22, listo.
+Contando objetos: 100% (22/22), listo.
+Compresión delta usando hasta 4 hilos
+Comprimiendo objetos: 100% (19/19), listo.
+Escribiendo objetos: 100% (22/22), 8.28 KiB | 4.14 MiB/s, listo.
+Total 22 (delta 8), reusados 0 (delta 0), pack-reusados 0
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/NEBULA1978/CURSO-GIT_SAROSI.git
+ * [new branch]      master -> master
+rama 'master' configurada para rastrear 'origin/master'.
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$
+
+////////////////////////////////////////////////
+Vamos a la carpeta de claves ssh en mi pc en linux mint:
+cd ~/.ssh
+lsd
+cat id_ed25519.pub(copio contenido en github)
+
+Voy a github al proyecto y copia la vave publica en github y subo repo a github con ssh:
+git push -u origin master
+
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
