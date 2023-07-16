@@ -95,7 +95,15 @@ HEAD está ahora en 4f40095 Contenido del blog mas carpetas ya rchivos
 next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$
 
 ////////////////////////////////////////////////
+Borro el archivo index.html rm index.html:
+
+Para recuperar:
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git restore index.html 
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ 
+
 ////////////////////////////////////////////////
+
+
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
