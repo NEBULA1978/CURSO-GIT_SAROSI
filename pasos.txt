@@ -1,0 +1,98 @@
+git init
+
+////////////////////////////
+git add .
+////////////////////////////
+git add index.html
+////////////////////////////
+
+git commit -m "Añadiendo index.html"
+
+////////////////////////////
+git status
+
+////////////////////////////
+git commit -m "Aqui va el contenido del blog"
+
+////////////////////////////
+
+Para ver los commits git log:
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git log
+commit 1094632cc63dae883c15a9adbdcf0f7279c41683 (HEAD -> master)
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Sun Jul 16 22:56:17 2023 +0200
+
+    Aqui va el contenido del blog
+
+commit de12f2ae749bb5e63f5277968ac7ed05a57f5fe6
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Sun Jul 16 22:51:00 2023 +0200
+:
+
+//////////////////////////////////////
+
+Si quiero volver a la primer a version:
+git checkout 1094632cc63dae883c15a9adbdcf0f7279c41683
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git checkout 1094632cc63dae883c15a9adbdcf0f7279c41683
+Nota: cambiando a '1094632cc63dae883c15a9adbdcf0f7279c41683'.
+
+Te encuentras en estado 'detached HEAD'. Puedes revisar por aquí, hacer
+cambios experimentales y hacer commits, y puedes descartar cualquier
+commit que hayas hecho en este estado sin impactar a tu rama realizando
+otro checkout.
+
+Si quieres crear una nueva rama para mantener los commits que has creado,
+puedes hacerlo (ahora o después) usando -c con el comando checkout. Ejemplo:
+
+  git switch -c <nombre-de-nueva-rama>
+
+O deshacer la operación con:
+
+  git switch -
+
+Desactiva este aviso poniendo la variable de config advice.detachedHead en false
+
+HEAD está ahora en 1094632 Aqui va el contenido del blog
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ 
+
+//////////////////////////////////////
+Para ir al ultimo commit:
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git checkout 1094632cc63dae883c15a9adbdcf0f7279c41683
+La posición previa de HEAD era de12f2a Añadido index.html
+HEAD está ahora en 1094632 Aqui va el contenido del blog
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ 
+//////////////////////////////////////
+
+Para quedarme solo con el ultimo commit git reset hash-commit:
+
+Para volver al ultimo estado sin fallos:
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git checkout master
+Cambiado a rama 'master'
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ 
+
+/////////////////////////////////////
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git reset de12f2ae
+Cambios fuera del área de stage tras el reset:
+M       index.html
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git log
+commit de12f2ae749bb5e63f5277968ac7ed05a57f5fe6 (HEAD -> master)
+Author: NEBULA1978 <rpascualey@gmail.com>
+Date:   Sun Jul 16 22:51:00 2023 +0200
+
+    Añadido index.html
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ 
+
+////////////////////////////////////////////////
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
