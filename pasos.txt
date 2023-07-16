@@ -193,5 +193,31 @@ Hago cambio en repo clonado y par a subir a github :
 git push -u origin master
 
 ////////////////////////////////////////////////
+Creamos una rama y cambiamos de rama:
+git checkout -b feature-post-styles
+
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi/CURSO-GIT_SAROSI$ git checkout -b feature-post-styles
+Cambiado a nueva rama 'feature-post-styles'
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi/CURSO-GIT_SAROSI$ 
+
+////////////////////////////////////////////////
+
+Ver ramas:
+> git branch
+* feature-post-styles
+  master
+                                                                                                   
+
+ ~/V/va/VI/cu/CURSO-GIT_SAROSI  on feature-post-styles !1     
+
+////////////////////////////////////////////////
+Añado commit sin pasar por añadir:
+git commit -a -m "Add post styles"
+
+////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
