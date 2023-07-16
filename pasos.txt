@@ -88,7 +88,11 @@ Date:   Sun Jul 16 22:51:00 2023 +0200
 next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ 
 
 ////////////////////////////////////////////////
+Para volver a verion de un commit con git reset --hard hash-commit
 
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$ git reset --hard  4f4009560f84e54833153cf99989ae351c90d9e1
+HEAD está ahora en 4f40095 Contenido del blog mas carpetas ya rchivos
+next@rases:~/Vídeos/varios anteriores/VIDEOS_PROYECTOS/curso-git-sarosi$
 
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
